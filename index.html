@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100xdevs - Learn to Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="brand">100xdevs</a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#courses">Courses</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="ri-moon-line"></i>
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>100xDevs, </h2>
+            <h1>because 10x ain't enough!</h1>
+            <p>Join our community of developers and learn the most in-demand skills from industry experts.</p>
+            <div class="cta-buttons">
+                <a href="#courses" class="btn primary">Browse Courses</a>
+                <a href="#contact" class="btn secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://framerusercontent.com/images/DDO8F7C4pWNBxdYV2AjevKQz3QQ.png" alt="Coding on laptop">
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2>Our Featured Courses</h2>
+        <p class="section-subtitle">Hands-on courses taught by industry professionals</p>
+        
+        <div class="course-grid">
+            <!-- Course cards will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <section>
+      <div id="table">
+         <h2>Popular Online Courses</h2>
+         <table>
+         <thead>
+         <tr>
+         <th>Sr No.</th>
+         <th>Course Name</th>
+         <th>Instructor</th>
+         <th>Price</th>
+         <th>Rating</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+         <td>1</td>
+         <td>Web Development Bootcamp</td>
+         <td>Harkirat Singh</td>
+         <td class="price">$49.99</td>
+         <td class="rating">⭐ 4.8</td>
+         </tr>
+         <tr>
+         <td>2</td>
+         <td>Python for Data Science</td>
+         <td>100xdevs</td>
+         <td class="price">$39.99</td>
+         <td class="rating">⭐ 4.7</td>
+         </tr>
+         <tr>
+         <td>3</td>
+         <td>Graphic Design Masterclass</td>
+         <td>Sheryians Coding School</td>
+         <td class="price">$29.99</td>
+         <td class="rating">⭐ 4.6</td>
+         </tr>
+         <tr>
+         <td>4</td>
+         <td>Digital Marketing Fundamentals</td>
+         <td>Ankur Warikoo</td>
+         <td class="price">$59.99</td>
+         
+         <td class="rating">⭐ 4.9</td>
+         </tr>
+         </tbody>
+         </table>
+         </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Why Learn With Us?</h2>
+            <p>We're a team of passionate developers dedicated to creating high-quality, practical courses that help you build real-world skills.</p>
+            <ul class="features-list">
+                <li><i class="ri-checkbox-circle-line"></i> Project-based learning</li>
+                <li><i class="ri-checkbox-circle-line"></i> Community support</li>
+                <li><i class="ri-checkbox-circle-line"></i> Lifetime access to course materials</li>
+                <li><i class="ri-checkbox-circle-line"></i> Regular content updates</li>
+            </ul>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Team working together">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">Have questions? We're here to help!</p>
+        
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+            
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="ri-mail-line"></i> contact@100xdevs.com</p>
+                <p><i class="ri-phone-line"></i> +91 123123123</p>
+                <p><i class="ri-map-pin-line"></i> 123 Developer Street, Bangalore</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#" class="brand">100xdevs</a>
+                <p>Empowering developers through education</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 100xdevs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
