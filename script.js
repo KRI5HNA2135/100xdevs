@@ -182,29 +182,41 @@ document.addEventListener('DOMContentLoaded', function() {
    });
    
    // Form submission
-   const contactForm = document.getElementById('contact-form');
-   
-   contactForm.addEventListener('submit', function(e) {
-       e.preventDefault();
-       
-       const formData = new FormData(this);
-       const name = formData.get('name');
-       const email = formData.get('email');
-       const message = formData.get('message');
-       
-       // Simple validation
-       if (!name || !email || !message) {
-           alert('Please fill in all fields');
-           return;
-       }
-       
-       // In a real application, you would send this data to a server
-       console.log('Form submitted:', { name, email, message });
-       
-       // Show success message
-       alert('Thank you for your message! We will get back to you soon.');
-       this.reset();
-   });
+const contactForm = document.getElementById('contact-form');
+
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+    
+    // Simple validation
+    if (!name || !email || !message) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Please fill in all fields!',
+            confirmButtonColor: '#ff4d4d',
+        });
+        return;
+    }
+    
+    // In a real application, you would send this data to a server
+    console.log('Form submitted:', { name, email, message });
+    
+    // Show success message with modern popup
+    Swal.fire({
+        icon: 'success',
+        title: 'Thank You!',
+        text: 'We will get back to you soon.',
+        confirmButtonColor: '#4CAF50',
+    });
+
+    this.reset();
+});
+
    
    // Responsive adjustments
    function handleResize() {
